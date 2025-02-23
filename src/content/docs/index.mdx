@@ -1,36 +1,46 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash
+title: Pokemon Emerald Legacy Wiki
+description: The Pokemon Emerald Legacy wiki and documentation page.
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: The Pokemon Emerald Legacy ROM hack documentation & wiki!
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/Pokemon-Emerald-Legacy-GBA-Game-Cover.jpg
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: Welcome
+      link: /general/welcome/
       icon: right-arrow
     - text: Read the Starlight docs
       link: https://starlight.astro.build
       icon: external
       variant: minimal
+head:
+  - tag: style
+    content: ".right-sidebar-container { display: none !important; }"
+  - tag: style
+    content: ".main-pane {width: 100% !important;}"
+  - tag: style
+    content: ".sl-container { margin-inline: auto !important;}"
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
-## Next steps
+<CardGrid>
+	<Card title="Full documentation" icon="setting">
+		Link to documentation
+	</Card>
+	<Card title="How to play" icon="open-book">
+		Link to own page, include video on that page: https://youtu.be/vGAgTKqefN4
+	</Card>
+	<Card title="The release video & changes overview" icon="pencil">
+		What makes this game different from the original Pokemon Emerald?
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
+		Watch the video all about [Pokemon Emerald Legacy here](https://youtu.be/jUHGejDvuNM).
 	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	<Card title="Pokemon Legacy link collection" icon="add-document">
+		https://www.reddit.com/r/PokemonLegacy/wiki/documentation/
 	</Card>
 </CardGrid>
+
+## What is Pokemon Emerald Legacy?
+
+Pokemon Emerald Legacy is an improved version of the original Pokemon Emerald released for the GBA. It is a ROM Hack that stays true to the original game.
